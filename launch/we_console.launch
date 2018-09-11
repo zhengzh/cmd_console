@@ -1,0 +1,7 @@
+
+<launch>
+  <node name="we_console" pkg="cmd_console" type="console" output="screen">
+    <param name="prompt_name" value="test>"/>
+    <remap from="cmd" to="gslam/cmd" />
+  </node>
+</launch>

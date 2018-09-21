@@ -13,21 +13,21 @@ catkin_package(
   )
 
 include_directories(${catkin_INCLUDE_DIRS})
-add_executable(we_console we_console.cpp)
-target_link_libraries(we_console
-  ${catkin_LIBRARIES}
-  edit
-)
+# add_executable(we_console we_console.cpp)
+# target_link_libraries(we_console
+#   ${catkin_LIBRARIES}
+#   edit
+# )
 # target_link_libraries(we_console_cin
 #   ${catkin_LIBRARIES}
 # )
 
 
-install(TARGETS we_console
-ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-)
+# install(TARGETS we_console
+# ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+# LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+# RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+# )
 install(
     PROGRAMS
       scripts/console
